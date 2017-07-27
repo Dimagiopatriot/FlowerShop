@@ -1,6 +1,5 @@
 package model.entity;
 
-import model.entity.enums.Freshness;
 import model.entity.enums.Inflorescence;
 import model.entity.enums.Stem;
 
@@ -9,17 +8,10 @@ import model.entity.enums.Stem;
  */
 public class Flower extends Plant {
 
-    private Freshness freshness;
     private Inflorescence inflorescence;
     private Stem stem;
-
-    public Freshness getFreshness() {
-        return freshness;
-    }
-
-    public void setFreshness(Freshness freshness) {
-        this.freshness = freshness;
-    }
+    private boolean isNeedFeeding;
+    private boolean isNeedSupport;
 
     public Inflorescence getInflorescence() {
         return inflorescence;
@@ -35,5 +27,21 @@ public class Flower extends Plant {
 
     public void setStem(Stem stem) {
         this.stem = stem;
+    }
+
+    public boolean isNeedFeeding() {
+        return isNeedFeeding;
+    }
+
+    public void setNeedFeeding(boolean needFeeding) {
+        isNeedFeeding = needFeeding;
+    }
+
+    public boolean isNeedSupport() {
+        return isNeedSupport;
+    }
+
+    public void setNeedSupport(boolean needSupport) {
+        isNeedSupport = needSupport;
     }
 }
