@@ -2,14 +2,14 @@ package model.entity;
 
 import model.entity.enums.*;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by troll on 27.07.2017.
  */
 public class Bouquet {
 
-    private ArrayList<Flower> flowers;
+    private List<Flower> flowers;
     private Accessory bucket;
     private Accessory ribbon;
     private Accessory wrapper;
@@ -17,11 +17,11 @@ public class Bouquet {
     private Price price;
     private Event event;
 
-    public ArrayList<Flower> getFlowers() {
+    public List<Flower> getFlowers() {
         return flowers;
     }
 
-    public void setFlowers(ArrayList<Flower> flowers) {
+    public void setFlowers(List<Flower> flowers) {
         if (flowers.size() > 0)
             this.flowers = flowers;
     }
